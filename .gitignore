@@ -1,0 +1,4 @@
+.pytest_cache
+__pycache__
+.vscode
+tests/test_password_is_ok.py
