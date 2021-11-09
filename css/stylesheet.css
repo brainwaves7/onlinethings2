@@ -189,8 +189,7 @@ main h3 {
 }
 #about-section{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .about {
@@ -198,8 +197,7 @@ main h3 {
     padding-bottom: 20px;
 }
 .about p{
-    text-align: left;
-    
+    text-align: left; 
 }
 #skills {
     display: flex;
@@ -272,10 +270,44 @@ footer{
 
 /* Cute penguin*/
 
-@media (max-width: 350px) {
+@media screen and (max-width: 580px) {
     :root {
-        --penguin-size: 300px;
+        --penguin-size: 220px;
         --penguin-skin: black;
+    }
+    body{
+        font-size: 12px;
+    }
+    .greetings h1{
+        font-size: 36px;
+    }
+    .dots{
+        height: 10px;
+        width: 10px;
+    }
+    .right-column{
+        margin: 0;
+    }
+    #preview, #preview-shadow{
+        width: 220px;
+    }
+    .corner {
+        height: 5px;
+        width: 5px;
+    }
+    .contact-column img {
+        width: 200px;
+        height: 200px;
+    }
+    main h3{
+        font-size: 20px;
+    }
+    #skills{
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    #skills ul{
+        margin-right: 15px;
     }
 
 }
@@ -473,7 +505,13 @@ footer{
 .penguin * {
     position: absolute;
 }
-
+a{
+    color: #001e00;
+}
 a:hover{
     font-weight: bold;
+    text-transform: uppercase;
+}
+abbr{
+    text-decoration: none;
 }
